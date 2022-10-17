@@ -8,7 +8,7 @@ namespace Task
 {
     public class Class1
     {
-        public Action<bool> Action => Program.Show;
+        public Action<bool> Action { get; set; }
         public int Pow(int x, int y) => x * y;
     }
 }

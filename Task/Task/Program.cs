@@ -14,14 +14,10 @@ namespace Task
             var predicate = class2.Calc(func, 3, 2);
             var res = predicate.Invoke(2);
 
+            class1.Action = (item) => Console.WriteLine(item);
             class1.Action.Invoke(res);
 
             // class1.Action.Invoke(class2.Calc(func, 3, 2).Invoke(2));
-        }
-
-        public static void Show(bool item)
-        {
-            Console.WriteLine(item);
         }
     }
 }
